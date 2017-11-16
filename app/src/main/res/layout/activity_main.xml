@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="143dp"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:text="Enter Movie "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginLeft="134dp"
+        android:layout_marginStart="134dp"
+        android:text="Name :" />
+
+    <TextView
+        android:id="@+id/lblGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblName"
+        android:layout_alignStart="@+id/lblName"
+        android:layout_below="@+id/lblName"
+        android:layout_marginTop="33dp"
+        android:text="Genre :" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/lblGenre"
+        android:layout_toRightOf="@+id/lblGenre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignTop="@+id/lblGenre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+</RelativeLayout>
